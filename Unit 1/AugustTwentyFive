@@ -18,6 +18,21 @@ System.out.print("0   0 0           0  0     0000000 0           0");
 //0 0     0       0    0     0         0       0
 //0  0   0         0   0     0        0         0
 //0   0 0           0  0     0000000 0           0
+
+System.out.println((6.0*(3.5-(1.5*5))/(55.6-30.2)));
+
+//6.0 x (3.5 - 1.5 x 5)
+//-------------------
+//    55.6 - 30.2
+
+int r = 4;
+final double pi = 3.14;
+double answer = (2*r*(pi));
+double area = (pi*r*r);
+System.out.print("The circumference of the circle is ");
+System.out.print((double)answer);
+System.out.print(" and the area of the circle is ");
+System.out.print((double)area);
 	}
 
 }
