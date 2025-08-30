@@ -20,7 +20,7 @@ Line 24 declares the surfaceArea as a double and the equation used to find the m
 The equation being 6*(sideLength*sideLength) which is the formula: A=6a^2 in which a = sideLength.
 */
 
-double surfaceArea = 6*(sideLength*sideLength);
+double surfaceArea = 6 * (sideLength * sideLength);
 
 /* 
 Line 31 declares the volume as a double and the equation used to find its measurement. 
@@ -30,7 +30,7 @@ The equation being "sideLength*sideLength*sideLength" which is the formula: V=s^
 double volume = sideLength * sideLength * sideLength;
 
 /* 
-Line 37 prints the sentence of what the surfaceArea and volume of the cube is from lines 24 & 31.
+Line 37 prints the sentence of what the surfaceArea and volume of the cube is from lines 24 & 31 as ints.
 */
 
 System.out.print("The surface area of the cube is " + (int) surfaceArea + " and the volume is " + (int) volume);
