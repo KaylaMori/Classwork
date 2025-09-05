@@ -1,4 +1,8 @@
-public class methodsWork {
+/**
+*This is the work of the Methods Intro Practice
+*/
+
+public class MethodsWork {
 
 /** 
  * This is the main string method that makes everything work the way it works by calling them 	
@@ -17,7 +21,7 @@ public class methodsWork {
 	
 	
 	/**
-	 * This prints my name: "Kayla" and goes to the next line.
+	 * Prints my name: "Kayla" and goes to next line
 	 */
 	public static void stateName()
 	{
@@ -26,7 +30,7 @@ public class methodsWork {
 	
 	
 	/**
-	 * This prints my eye color: "Brown" and goes to the next line.
+	 * Prints my eye color: "Brown" and goes to next line.
 	 */
 	public static void stateEyeColor()
 	{
@@ -35,7 +39,7 @@ public class methodsWork {
 	
 	
 	/**
-	 * This prints my hair style: "Down" and goes to the next line.
+	 * Prints my hair style: "Down" and goes to next line.
 	 */
 	public static void stateHairStyle()
 	{
@@ -44,7 +48,7 @@ public class methodsWork {
 	
 	
 	/**
-	 * This prints my best friends: "Olivia & Evie" and goes to the next line
+	 * Prints my best friends: "Olivia & Evie" and goes to next line
 	 */
 	public static void stateBestFriend()
 	{
@@ -53,7 +57,7 @@ public class methodsWork {
 	
 	
 	/**
-	 * This prints my favorite food: "Chicken" and goes to the next line
+	 * Prints my favorite food: "Chicken" and goes to next line
 	 */
 	public static void stateFavoriteFood()
 	{
@@ -61,7 +65,7 @@ public class methodsWork {
 	}
 	
 	/**
-	 * This method can print the diameter, circumference, and area of a circle by inputting any radius as a double and goes to the next line.
+	 * Declares radius as double. Calculates and prints radius, diameter, circumference, and area of a circle and goes to next line.
 	 * @param radius
 	 */
 	public static void printCircleStats (double radius)
@@ -76,8 +80,8 @@ public class methodsWork {
 	}
 	
 /**
- * This method can find the sum, difference, product, quotient, and modulus of two numbers declared as: int variable1 & int variable2
- * in which any number can be input and prints the answers out and goes to the next line.
+ * Finds sum, difference, product, quotient, and modulus of two numbers declared as: int variable1 & int variable2
+ * Prints the answers out and goes to the next line.
  * @param one
  * @param two
  */
