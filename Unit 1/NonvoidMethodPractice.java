@@ -20,8 +20,8 @@ public class NonVoidMethodPractice {
 	System.out.println(getCircleStats(9));	
 	
 	//prints the statement of sum, difference, prdoduct, quotient, remainder of modulus when any two numbers input below in the (_,_)
-	System.out.println("The sum of both numbers is " + getTwoIntSum (9,1) + " and the difference is " + getTwoIntDifference (9,1) + 
-			" and the product is " + getTwoIntProduct (9,1) + " and the quotient is " + getTwoIntQuotient (9,1) + " and the remainder of the modulus is " + getTwoIntModRemain (9,1) + ".");
+	System.out.println("The sum of both numbers is " + getSum (9,1) + " and the difference is " + getDifference (9,1) + 
+			" and the product is " + getProduct (9,1) + " and the quotient is " + getQuotient (9,1) + " and the remainder of the modulus is " + getModRemain (9,1) + ".");
 		
 	}
 	
@@ -101,9 +101,9 @@ public class NonVoidMethodPractice {
 	 * @return
 	 */
 	
-	public static int getTwoIntSum(int variable1, int variable2)
+	public static int getSum(int a, int b)
 	{
-		return variable1 + variable2;
+		return a + b;
 	}
 	
 	/**
@@ -113,9 +113,9 @@ public class NonVoidMethodPractice {
 	 * @param variable2
 	 * @return
 	 */
-	public static int getTwoIntDifference(int variable1, int variable2)
+	public static int getDifference(int a, int b)
 	{
-		return variable1 - variable2;
+		return a - b;
 	}
 	
 	/**
@@ -125,9 +125,9 @@ public class NonVoidMethodPractice {
 	 * @param variable2
 	 * @return
 	 */
-	public static int getTwoIntProduct(int variable1, int variable2)
+	public static int getProduct(int a, int b)
 	{
-		return variable1 * variable2;
+		return a * b;
 	}
 	
 	/**
@@ -137,9 +137,9 @@ public class NonVoidMethodPractice {
 	 * @param variable2
 	 * @return
 	 */
-	public static int getTwoIntQuotient(int variable1, int variable2)
+	public static int getQuotient(int a, int b)
 	{
-		return variable1 / variable2;
+		return a / b;
 	}
 	
 	/**
@@ -149,9 +149,9 @@ public class NonVoidMethodPractice {
 	 * @param variable2
 	 * @return
 	 */
-	public static int getTwoIntModRemain(int variable1, int variable2)
+	public static int getModRemain(int a, int b)
 	{
-		return variable1 % variable2;
+		return a % b;
 	}
 	
 }
