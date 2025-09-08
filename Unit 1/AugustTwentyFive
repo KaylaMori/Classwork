@@ -2,6 +2,7 @@ public class TestExample {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+/Prints out Name in Zeros
 System.out.println("0   0       0     0     0  0             0");
 System.out.println("0  0       0 0     0   0   0            0 0");
 System.out.println("0 0       0   0     0 0    0           0   0");
@@ -10,7 +11,7 @@ System.out.println("0 0     0       0    0     0         0       0");
 System.out.println("0  0   0         0   0     0        0         0");
 System.out.print("0   0 0           0  0     0000000 0           0");
 
-
+//Copied and pasted to print out line by line
 //0   0       0     0     0  0             0
 //0  0       0 0     0   0   0            0 0
 //0 0       0   0     0 0    0           0   0
@@ -25,10 +26,13 @@ System.out.println((6.0*(3.5-(1.5*5))/(55.6-30.2)));
 //-------------------
 //    55.6 - 30.2
 
+//Calculates circumference and area as a double 
 int r = 4;
 final double pi = 3.14;
 double answer = (2*r*(pi));
 double area = (pi*r*r);
+
+//These print out the sentence of the answers about the circle
 System.out.print("The circumference of the circle is ");
 System.out.print((double)answer);
 System.out.print(" and the area of the circle is ");
