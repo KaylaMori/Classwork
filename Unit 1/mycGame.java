@@ -90,9 +90,9 @@ public class mycGame {
             System.out.println("Talent +15! Popularity +5! The judges are impressed by your lyricism and producing skills!");
         }
    
+        
         player.displayStats();
 
-        
         
         
         
@@ -119,6 +119,9 @@ public class mycGame {
         }
         
         
+        
+        //ENDING popular trainees
+        
         //if loop for the two team choices
         if (round2.equalsIgnoreCase("1"))
         {
@@ -126,6 +129,7 @@ public class mycGame {
             System.out.println("You join Team A with popular trainees.");
             System.out.println("The cameras are on your team a lot of the time so you manage to snag screentime :D");
             System.out.println("Only downside is you get constantly outshined.");
+            
             
             // POSITION
             // // While loop check for valid input
@@ -356,13 +360,14 @@ public class mycGame {
             
             
             //ENDING underdogs
+            
             //y2k concept
             if (conceptChoice.equalsIgnoreCase("1")) 
             {
                 System.out.println("You go viral on SNS!");
                 System.out.println("The performance choreography turns into a dance challenge all over SNS!");
                 
-                // TRENDING
+                //TRENDING
                 System.out.println("Popularity increase:");
                 for (int i = 1; i <= 4; i++) 
                 {
@@ -372,7 +377,7 @@ public class mycGame {
                 player.setPopularity(player.getPopularity() + 30);
                 
                 
-                //ENDING popular
+                //ENDING popular (Considers really good popularity)
                 if (player.getPopularity() >= 75) 
                 {
                     System.out.println("You become popular on social media!");
@@ -382,7 +387,7 @@ public class mycGame {
                     player.displayStats();
                 } 
                 
-                //ENDING ok
+                //ENDING ok (You get in)
                 else 
                 {
                     System.out.println("You gain a solid fanbase and dedicated fans!");
@@ -398,12 +403,12 @@ public class mycGame {
             {
                 System.out.println(" You deliver a cinematic stage!");
                 System.out.println("The judges and audience are wowed at the performance and stage production.");
-                
+                //Get +20 Talent
                 player.setTalent(player.getTalent() + 20);
                 
                 
                 
-                //ENDING talented
+                //ENDING talented (considers high popularity)
                 if (player.getTalent() >= 90) 
                 {
                     System.out.println("The judges call you a stage genius!");
@@ -413,7 +418,7 @@ public class mycGame {
                     player.displayStats();
                 } 
                 
-                //ENDING all-rounder
+                //ENDING all-rounder (considers better talent and decent popularity)
                 else if (player.getTalent() >= 70 && player.getPopularity() >= 50) 
                 {
                     System.out.println("Dang you're talented and popular!");
@@ -423,7 +428,7 @@ public class mycGame {
                     player.displayStats();
                 } 
                 
-                //ENDING unfortunate
+                //ENDING unfortunate (low talent and popularity)
                 else 
                 {
                     System.out.println("You just miss the final lineup by one spot.");
@@ -435,9 +440,12 @@ public class mycGame {
             }
         }
         
+        //Closes scanner
         inputReader.close();
 }
-    
+    /**
+     * Method start game
+     */
 	private static void gameStart()
 	{
         // Game introduction
