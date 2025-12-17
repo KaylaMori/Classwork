@@ -1,11 +1,15 @@
+
+//import the scanner
 import java.util.Scanner;
 // Main class 
 public class mycGame {
 
     public static void main(String[] args) {
     
+    	//scanner input reader
     	Scanner inputReader = new Scanner(System.in);
         
+    	//Method start (Intro w/ starting lines)
         gameStart();
 
         // Create character name
@@ -21,6 +25,7 @@ public class mycGame {
         int validSkill = 0;
         while (validSkill<1) 
         {
+        	//Choose specialty
             System.out.print("Choose your specialty (Vocal/Dance/Rap): ");
             skill = inputReader.nextLine();
             
@@ -69,7 +74,7 @@ public class mycGame {
         
         
         //if loop for the two choices of ROUND 1 songs
-        if (round1 == "1") 
+        if (round1.equalsIgnoreCase("1")) 
         {
             System.out.println("You perform a well-known popular song.");
             System.out.println("The judges approve of your performance. The audience likes it as well.");
@@ -115,7 +120,7 @@ public class mycGame {
         
         
         //if loop for the two team choices
-        if (round2 == "1") 
+        if (round2.equalsIgnoreCase("1"))
         {
             // Popular team 
             System.out.println("You join Team A with popular trainees.");
@@ -131,7 +136,7 @@ public class mycGame {
                 System.out.print("During practice, do you try to take the center position (Type 1) or support your teammates and be cohesive as a team (Type 2)? ");
                 positionChoice = inputReader.nextLine();
                 
-                if (positionChoice == "1" || positionChoice == "2") 
+                if (positionChoice.equalsIgnoreCase("1") || positionChoice.equalsIgnoreCase("2")) 
                 {
                     validChoice += 1;
                 } 
@@ -142,7 +147,7 @@ public class mycGame {
             }
             
             //If loop for two position choices
-            if (positionChoice == "1") 
+            if (positionChoice.equalsIgnoreCase("1")) 
             {
                 System.out.println("You ask for the center position.");
                 System.out.println("Some teammates look upset and hesitant but it gives you some screentime i guess.");
@@ -174,7 +179,7 @@ public class mycGame {
                 System.out.print("Do you rely on fans and fanservice, create a moving speech (Type 1) or focus on giving an amazing performance (Type 2)? ");
                 round3 = inputReader.nextLine();
                 
-                if (round3 == "1" || round3 == "2") 
+                if (round3.equalsIgnoreCase("1") || round3.equals("2")) 
                 {
                     validChoice += 1;
                 } 
@@ -186,7 +191,7 @@ public class mycGame {
             
             //if loop for voting
             //create a moving speech choice
-            if (round3 == "1") 
+            if (round3.equalsIgnoreCase("1")) 
             {
                 System.out.println("You pour your emotions out on stage.");
                 System.out.println("'I've dreamed of this since I was a child and I will continue to work extremely hard. Thank you to all my fans and I hope for continued support!'");
@@ -283,7 +288,7 @@ public class mycGame {
                 System.out.print("Your team needs a leader first off. Do you volunteer to be leader (Type 1) or let someone else lead while you focus on practcing your own skills (Type 2)? ");
                 leaderChoice = inputReader.nextLine();
                 
-                if (leaderChoice == "1" || leaderChoice == "2") 
+                if (leaderChoice.equalsIgnoreCase("1") || leaderChoice.equalsIgnoreCase("2")) 
                 {
                     validChoice += 1;
                 } 
@@ -294,7 +299,7 @@ public class mycGame {
             }
             
             //LEADER
-            if (leaderChoice == "1") 
+            if (leaderChoice.equalsIgnoreCase("1")) 
             {
                 System.out.println("You take charge as the leader!");
                 System.out.println("You organize practice schedules and motivate everyone while leading dance practices and fixing the details of your performance.");
@@ -336,7 +341,7 @@ public class mycGame {
                 System.out.print("Do you choose a trendy, y2k concept (Type 1) or a cinematic, artistic concept (Type 2)? ");
                 conceptChoice = inputReader.nextLine();
                 
-                if (conceptChoice == "1" || conceptChoice == "2") 
+                if (conceptChoice.equalsIgnoreCase("1") || conceptChoice.equalsIgnoreCase("2")) 
                 {
                     validChoice += 1;
                 } 
@@ -352,7 +357,7 @@ public class mycGame {
             
             //ENDING underdogs
             //y2k concept
-            if (conceptChoice == "1") 
+            if (conceptChoice.equalsIgnoreCase("1")) 
             {
                 System.out.println("You go viral on SNS!");
                 System.out.println("The performance choreography turns into a dance challenge all over SNS!");
