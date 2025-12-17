@@ -1,4 +1,4 @@
-// Trainee class
+// Character stats Class
 public class charStats {
 	
 	//Attributes
@@ -9,7 +9,9 @@ public class charStats {
     private String skill;
     
 
-    //Constructor
+    /*
+     *When called, generates new charStats object with updated name, age, talent, popularity, skill
+     */
     public charStats(String name1, int age1, int talent1, int popularity1, String skill1) 
     {
         name = name1;
@@ -20,27 +22,41 @@ public class charStats {
     }
     
 
-    
+    /*
+     * Returns the name 
+     */
     public String getName() 
     {
         return name;
     }
     
+    /*
+     * Returns the age
+     */
     public int getAge() 
     {
         return age;
     }
     
+    /*
+     * Returns the talent
+     */
     public int getTalent() 
     {
         return talent;
     }
     
+    /*
+     * Returns the popularity
+     */
     public int getPopularity() 
     {
         return popularity;
     }
     
+    /*
+     * Returns the skill
+     */
     public String getSkill() 
     {
         return skill;
@@ -48,35 +64,50 @@ public class charStats {
     
     
     
-
-    public void setName(String name1) 
+    /*
+	 * Changes charStats objects name as a new name 
+	 */
+    public void setName(String newName) 
     {
-        name = name1;
+        name = newName;
     }
     
-    public void setAge(int age1) 
+    /*
+	 * Changes charStats objects age as a new age 
+	 */
+    public void setAge(int newAge) 
     {
-        age = age1;
+        age = newAge;
     }
     
-    public void setTalent(int talent1) 
+    /*
+	 * Changes charStats objects talent as a new talent 
+	 */
+    public void setTalent(int newTalent) 
     {
-        talent = talent1;
+        talent = newTalent;
     }
     
-    public void setPopularity(int popularity1) 
+    /*
+	 * Changes charStats objects popularity as a new popularity 
+	 */
+    public void setPopularity(int newPopularity) 
     {
-        popularity = popularity1;
+        popularity = newPopularity;
     }
     
-    public void setSkill(String skill1) 
+    /*
+	 * Changes charStats objects skill as a new skill 
+	 */
+    public void setSkill(String newSkill) 
     {
-        skill = skill1;
+        skill = newSkill;
     }
     
     
-    
-    // Display trainee stats when called
+    /*
+     *Display trainee stats when called
+     */
     public void displayStats() 
     {
         System.out.println("TRAINEE PROFILE");
