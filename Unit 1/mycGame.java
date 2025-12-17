@@ -39,7 +39,7 @@ public class mycGame {
             }
         }
         
-        // Characters stats 
+        //Call constructor to generate new object
         charStats player = new charStats(name, age, 50, 30, skill);
         player.displayStats();
         
